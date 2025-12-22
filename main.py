@@ -1,18 +1,12 @@
 import requests
 from datetime import datetime, timedelta
 
-def check_streak(username):
-    """Vérifie les contributions GitHub d'un utilisateur"""
-    
-    # Utiliser l'API GitHub pour récupérer les événements publics
+def check_streak_detaille(username):
     url = f"https://api.github.com/users/{username}/events/public"
-    headers = {"Accept": "application/vnd.github.v3+json"}
-    
-    r = requests.get(url, headers=headers)
+    r = requests.get(url)
     
     if r.status_code != 200:
         print(f"Erreur: impossible de récupérer les données pour {username}")
-        print(f"Status: {r.status_code}")
         return
     
     events = r.json()
@@ -21,17 +15,29 @@ def check_streak(username):
         print(f"Aucun événement public trouvé pour {username}")
         return
     
-    # Compter les jours avec des contributions
-    contribution_dates = set()
+    # Récupérer les dates uniques
+    dates = []
     for event in events:
-        date_str = event.get("created_at", "")[:10]  # Format: YYYY-MM-DD
-        contribution_dates.add(date_str)
+        date = event['created_at'][:10]  # YYYY-MM-DD
+        if date not in dates:
+            dates.append(date)
     
-    print(f"Utilisateur: {username}")
-    print(f"Nombre de jours avec activité (derniers événements): {len(contribution_dates)}")
-    print(f"Dernière activité: {max(contribution_dates) if contribution_dates else 'Aucune'}")
-    print(f"\nDates d'activité récentes:")
-    for date in sorted(contribution_dates, reverse=True)[:5]:
-        print(f"  - {date}")
+    # Trier les dates
+    dates.sort(reverse=True)
+    
+    # Calculer le streak actuel
+    streak = 1
+    for i in range(1, len(dates)):
+        prev_date = datetime.strptime(dates[i-1], '%Y-%m-%d').date()
+        curr_date = datetime.strptime(dates[i], '%Y-%m-%d').date()
+        if (prev_date - curr_date).days == 1:
+            streak += 1
+        else:
+            break
+    
+    print(f"STREAK {username}")
+    print(f"Streak actuel: {streak} jours")
+    print(f"Dernieres dates: {dates[:10]}")
+    print("Parfait !")
 
-check_streak("Punkyherisson")
+check_streak_detaille("Punkyherisson")
