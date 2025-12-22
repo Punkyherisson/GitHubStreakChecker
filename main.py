@@ -53,6 +53,23 @@ def check_streak_detaille(username):
     print(f"Dernieres dates: {dates[:10]}")
     print("Parfait !")
     
+    # Récupérer TOUS les dépôts via l'API repos
+    repos_url = f"https://api.github.com/users/{username}/repos?per_page=100"
+    repos_response = requests.get(repos_url)
+    all_repos = []
+    
+    if repos_response.status_code == 200:
+        repos_data = repos_response.json()
+        for repo in repos_data:
+            all_repos.append({
+                'name': repo['name'],
+                'full_name': repo['full_name'],
+                'description': repo.get('description', ''),
+                'url': repo['html_url'],
+                'created_at': repo['created_at'][:10],
+                'updated_at': repo['updated_at'][:10]
+            })
+    
     # Créer le fichier des dépôts
     today_str = datetime.now().strftime("%d%m%Y")
     filename = f"repositories{today_str}.MD"
@@ -60,10 +77,12 @@ def check_streak_detaille(username):
     with open(filename, 'w') as f:
         f.write(f"# Depots GitHub de {username}\n")
         f.write(f"Date: {datetime.now().strftime('%d/%m/%Y')}\n\n")
-        f.write(f"## Liste des depots ({len(repos)} depots)\n\n")
-        for repo in sorted(repos):
-            f.write(f"- {repo}\n")
+        f.write(f"## Liste des depots ({len(all_repos)} depots)\n\n")
+        for repo in sorted(all_repos, key=lambda x: x['name'].lower()):
+            desc = f" - {repo['description']}" if repo['description'] else ""
+            f.write(f"- [{repo['name']}]({repo['url']}){desc}\n")
+            f.write(f"  - Cree: {repo['created_at']} | Mis a jour: {repo['updated_at']}\n")
     
-    print(f"\nFichier cree: {filename} ({len(repos)} depots)")
+    print(f"\nFichier cree: {filename} ({len(all_repos)} depots)")
 
 check_streak_detaille("Punkyherisson")

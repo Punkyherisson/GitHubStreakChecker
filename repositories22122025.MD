@@ -1,9 +1,93 @@
 # Depots GitHub de Punkyherisson
 Date: 22/12/2025
 
-## Liste des depots (4 depots)
+## Liste des depots (44 depots)
 
-- Punkyherisson/LaFormePasLesFormes
-- Punkyherisson/LearnGitGithub
-- Punkyherisson/MyJapaneseGames
-- Punkyherisson/VB-Projects
+- [Automation](https://github.com/Punkyherisson/Automation) - Collection of programs from Automate the Boring stuff with python
+  - Cree: 2025-08-07 | Mis a jour: 2025-08-16
+- [bookbot](https://github.com/Punkyherisson/bookbot) - 1st project from Bootdev: Build your first local command-line application in Python and use the real tools that developers use every day.
+  - Cree: 2025-01-12 | Mis a jour: 2025-09-24
+- [BookbotDocker](https://github.com/Punkyherisson/BookbotDocker)
+  - Cree: 2025-01-23 | Mis a jour: 2025-01-23
+- [BootdevAsteroid](https://github.com/Punkyherisson/BootdevAsteroid) - Build Asteroids using Python and Pygame (Bootdev project)
+  - Cree: 2025-01-16 | Mis a jour: 2025-09-23
+- [BootdevGoServer](https://github.com/Punkyherisson/BootdevGoServer)
+  - Cree: 2025-01-23 | Mis a jour: 2025-01-23
+- [BootDevMazeSolver](https://github.com/Punkyherisson/BootDevMazeSolver) - BootDevMaze Python Project
+  - Cree: 2025-02-05 | Mis a jour: 2025-02-08
+- [BootdevStaticSiteGenerator](https://github.com/Punkyherisson/BootdevStaticSiteGenerator)
+  - Cree: 2025-01-18 | Mis a jour: 2025-09-27
+- [BoulangerieChatGPT](https://github.com/Punkyherisson/BoulangerieChatGPT) - Simulation Boulangerie en Python en utilisant Chat GPT
+  - Cree: 2025-03-23 | Mis a jour: 2025-05-01
+- [Calcul_IRPP2025](https://github.com/Punkyherisson/Calcul_IRPP2025) - Calcul de l'impot sur le revenu 2025 en Python
+  - Cree: 2025-05-04 | Mis a jour: 2025-09-20
+- [DonjonCollab](https://github.com/Punkyherisson/DonjonCollab) - Donjon NoteBook Collab
+  - Cree: 2025-08-02 | Mis a jour: 2025-08-27
+- [GarminConnect](https://github.com/Punkyherisson/GarminConnect) - Test pour lire les donnés de ma fenix
+  - Cree: 2025-08-28 | Mis a jour: 2025-08-29
+- [JavascriptDOM](https://github.com/Punkyherisson/JavascriptDOM)
+  - Cree: 2025-06-05 | Mis a jour: 2025-06-05
+- [JeuDeLangues](https://github.com/Punkyherisson/JeuDeLangues)
+  - Cree: 2025-06-08 | Mis a jour: 2025-10-19
+- [JeuGrammaireEspagnole](https://github.com/Punkyherisson/JeuGrammaireEspagnole) - Jeu de Grammaire Espagnole en Python
+  - Cree: 2024-08-26 | Mis a jour: 2024-12-25
+- [LaFormePasLesFormes](https://github.com/Punkyherisson/LaFormePasLesFormes) - Application Python dietetique et sport
+  - Cree: 2024-08-27 | Mis a jour: 2025-12-22
+- [learn-cicd-starter](https://github.com/Punkyherisson/learn-cicd-starter) - The starter code for the "Learn CICD" course on Boot.dev
+  - Cree: 2025-01-24 | Mis a jour: 2025-01-28
+- [LearnDockerHub](https://github.com/Punkyherisson/LearnDockerHub)
+  - Cree: 2025-01-24 | Mis a jour: 2025-01-24
+- [LearnGitGithub](https://github.com/Punkyherisson/LearnGitGithub) - Approfondir Git et Githubs
+  - Cree: 2025-09-05 | Mis a jour: 2025-12-14
+- [LearningAI](https://github.com/Punkyherisson/LearningAI) - A collection of using different AIs, mostly with free accounts
+  - Cree: 2025-09-14 | Mis a jour: 2025-09-21
+- [LearnReplit](https://github.com/Punkyherisson/LearnReplit) - Collection Of sources to learn Replit
+  - Cree: 2025-09-01 | Mis a jour: 2025-09-25
+- [MaBoulangerie](https://github.com/Punkyherisson/MaBoulangerie) - Jeu de gestion de Boulangerie
+  - Cree: 2025-01-24 | Mis a jour: 2025-10-24
+- [MammothPython](https://github.com/Punkyherisson/MammothPython) - Store and view exercices on Mammoth Training
+  - Cree: 2025-07-15 | Mis a jour: 2025-10-01
+- [MaTodolist](https://github.com/Punkyherisson/MaTodolist) - Simple DailyTo do list with Log in a textfile 
+  - Cree: 2024-09-28 | Mis a jour: 2025-08-18
+- [megacorp](https://github.com/Punkyherisson/megacorp) - The starter repo for the Git 2 course on Boot.dev
+  - Cree: 2025-02-05 | Mis a jour: 2025-02-09
+- [MultiLanguageMatch](https://github.com/Punkyherisson/MultiLanguageMatch) - Multi Language Match Game
+  - Cree: 2025-10-25 | Mis a jour: 2025-10-25
+- [MyJapaneseGames](https://github.com/Punkyherisson/MyJapaneseGames) - Noter ma progression sur des jeux pour apprendre le japonais et faire des petits jeux.
+  - Cree: 2025-12-22 | Mis a jour: 2025-12-22
+- [NewMammothCourses](https://github.com/Punkyherisson/NewMammothCourses) - Study Tech Courses on the new platform
+  - Cree: 2025-10-02 | Mis a jour: 2025-10-09
+- [numpy-100](https://github.com/Punkyherisson/numpy-100) - 100 numpy exercises (with solutions)
+  - Cree: 2024-02-29 | Mis a jour: 2024-02-29
+- [Packtlearning](https://github.com/Punkyherisson/Packtlearning) - Collection of Packt tutorials
+  - Cree: 2025-10-06 | Mis a jour: 2025-10-07
+- [PerplexityUsecases](https://github.com/Punkyherisson/PerplexityUsecases) - Using Perplexity effectively
+  - Cree: 2025-09-10 | Mis a jour: 2025-10-27
+- [PowershellTuto](https://github.com/Punkyherisson/PowershellTuto) - Project to understand Posershell scripts and usage
+  - Cree: 2025-07-14 | Mis a jour: 2025-07-14
+- [Prompt-Engineering-Guide](https://github.com/Punkyherisson/Prompt-Engineering-Guide) - 🐙 Guides, papers, lecture, notebooks and resources for prompt engineering
+  - Cree: 2024-02-29 | Mis a jour: 2024-02-29
+- [PromptDungeon](https://github.com/Punkyherisson/PromptDungeon)
+  - Cree: 2025-08-30 | Mis a jour: 2025-08-30
+- [Punkybot](https://github.com/Punkyherisson/Punkybot) - Discord BOT
+  - Cree: 2025-02-22 | Mis a jour: 2025-02-22
+- [Punkyherisson](https://github.com/Punkyherisson/Punkyherisson)
+  - Cree: 2024-02-26 | Mis a jour: 2025-05-05
+- [PythonInExcel](https://github.com/Punkyherisson/PythonInExcel) - Using Python in Excel: A collection of tutorials, exercices and tools to master the use of Python within Excel.
+  - Cree: 2025-08-31 | Mis a jour: 2025-09-19
+- [QuizGenius](https://github.com/Punkyherisson/QuizGenius) - Application de test de connaissance
+  - Cree: 2025-10-26 | Mis a jour: 2025-10-29
+- [Real_Python_Exos](https://github.com/Punkyherisson/Real_Python_Exos) - Real Python Exercices
+  - Cree: 2025-06-15 | Mis a jour: 2025-10-16
+- [RPGPythonClass](https://github.com/Punkyherisson/RPGPythonClass) - Personal project to define and implement RPG Class in Python
+  - Cree: 2025-06-30 | Mis a jour: 2025-07-23
+- [SimpleTodo2](https://github.com/Punkyherisson/SimpleTodo2)
+  - Cree: 2025-07-26 | Mis a jour: 2025-07-26
+- [TextRPGChatGPTPython](https://github.com/Punkyherisson/TextRPGChatGPTPython)
+  - Cree: 2024-08-25 | Mis a jour: 2024-08-25
+- [VB-Projects](https://github.com/Punkyherisson/VB-Projects) - Ensemble de tutoriaux et projets pour apprendre le Visual Basic
+  - Cree: 2025-12-10 | Mis a jour: 2025-12-16
+- [webflyx](https://github.com/Punkyherisson/webflyx)
+  - Cree: 2025-01-11 | Mis a jour: 2025-01-12
+- [ZenvaLearning](https://github.com/Punkyherisson/ZenvaLearning) - ApprendreLesCoursZenva
+  - Cree: 2025-07-18 | Mis a jour: 2025-10-05
