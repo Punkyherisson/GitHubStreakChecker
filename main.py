@@ -60,15 +60,50 @@ def check_streak_detaille(username):
     
     if repos_response.status_code == 200:
         repos_data = repos_response.json()
-        for repo in repos_data:
+        total = len(repos_data)
+        print(f"\nRecuperation des details pour {total} depots...")
+        
+        for i, repo in enumerate(repos_data):
+            # Récupérer le nombre de commits
+            commits_url = f"https://api.github.com/repos/{repo['full_name']}/commits?per_page=1"
+            commits_response = requests.get(commits_url)
+            commit_count = 0
+            if commits_response.status_code == 200:
+                # Le nombre total est dans le header Link
+                link_header = commits_response.headers.get('Link', '')
+                if 'last' in link_header:
+                    import re
+                    match = re.search(r'page=(\d+)>; rel="last"', link_header)
+                    if match:
+                        commit_count = int(match.group(1))
+                else:
+                    # Si pas de pagination, compter les commits retournés
+                    commit_count = len(commits_response.json())
+            
+            # Vérifier si README existe
+            readme_url = f"https://api.github.com/repos/{repo['full_name']}/readme"
+            readme_response = requests.get(readme_url)
+            has_readme = readme_response.status_code == 200
+            
+            # License depuis les données du repo
+            license_info = repo.get('license')
+            has_license = license_info is not None
+            license_name = license_info.get('name', '') if license_info else ''
+            
             all_repos.append({
                 'name': repo['name'],
                 'full_name': repo['full_name'],
                 'description': repo.get('description', ''),
                 'url': repo['html_url'],
                 'created_at': repo['created_at'][:10],
-                'updated_at': repo['updated_at'][:10]
+                'updated_at': repo['updated_at'][:10],
+                'commits': commit_count,
+                'has_readme': has_readme,
+                'has_license': has_license,
+                'license_name': license_name
             })
+            
+            print(f"  [{i+1}/{total}] {repo['name']}")
     
     # Créer le fichier des dépôts
     today_str = datetime.now().strftime("%d%m%Y")
@@ -81,6 +116,11 @@ def check_streak_detaille(username):
         for repo in sorted(all_repos, key=lambda x: x['name'].lower()):
             desc = f" - {repo['description']}" if repo['description'] else ""
             f.write(f"- [{repo['name']}]({repo['url']}){desc}\n")
+            
+            readme_status = "Oui" if repo['has_readme'] else "Non"
+            license_status = repo['license_name'] if repo['has_license'] else "Non"
+            
+            f.write(f"  - Commits: {repo['commits']} | README: {readme_status} | Licence: {license_status}\n")
             f.write(f"  - Cree: {repo['created_at']} | Mis a jour: {repo['updated_at']}\n")
     
     print(f"\nFichier cree: {filename} ({len(all_repos)} depots)")
