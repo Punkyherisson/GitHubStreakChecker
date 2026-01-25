@@ -1,8 +1,13 @@
 # Depots GitHub de Punkyherisson
 Date: 25/01/2026
 
-## Liste des depots (45 depots)
+## Liste des depots (50 depots)
+- Publics: 45
+- Prives: 5
 
+- [AbosUtilization](https://github.com/Punkyherisson/AbosUtilization) [PRIVE] - A private Repository where I put all my abos and check my usage (along with costs and benefits)
+  - Commits: 1 | README: Non | Licence: Non
+  - Cree: 2025-11-02 | Mis a jour: 2025-11-03
 - [Automation](https://github.com/Punkyherisson/Automation) - Collection of programs from Automate the Boring stuff with python
   - Commits: 10 | README: Oui | Licence: MIT License
   - Cree: 2025-08-07 | Mis a jour: 2025-08-16
@@ -33,12 +38,18 @@ Date: 25/01/2026
 - [ChatGPTPythonSQL](https://github.com/Punkyherisson/ChatGPTPythonSQL)
   - Commits: 85 | README: Oui | Licence: MIT License
   - Cree: 2024-12-25 | Mis a jour: 2025-12-27
+- [CoursPython](https://github.com/Punkyherisson/CoursPython) [PRIVE] - Cours de Python avec des exemple
+  - Commits: 4 | README: Oui | Licence: Non
+  - Cree: 2024-02-17 | Mis a jour: 2025-07-13
 - [DonjonCollab](https://github.com/Punkyherisson/DonjonCollab) - Donjon NoteBook Collab
   - Commits: 15 | README: Non | Licence: Non
   - Cree: 2025-08-02 | Mis a jour: 2025-08-27
 - [GarminConnect](https://github.com/Punkyherisson/GarminConnect) - Test pour lire les donnés de ma fenix
   - Commits: 1 | README: Non | Licence: Non
   - Cree: 2025-08-28 | Mis a jour: 2025-08-29
+- [GestionFinance](https://github.com/Punkyherisson/GestionFinance) [PRIVE] - Gestion des Finances personnelles avec Excel, Python, ChatGPT
+  - Commits: 4 | README: Oui | Licence: MIT License
+  - Cree: 2025-04-18 | Mis a jour: 2025-04-21
 - [JaponaisAvecReplitEtPython](https://github.com/Punkyherisson/JaponaisAvecReplitEtPython) - Une suite d'outils Python pour apprendre et pratiquer le japonais. Ce projet rassemble plusieurs bibliothèques pour la conversion de caractères, la lecture des kanji, la traduction et l'utilisation d'un dictionnaire japonais-anglais.
   - Commits: 20 | README: Oui | Licence: MIT License
   - Cree: 2025-12-24 | Mis a jour: 2026-01-01
@@ -72,12 +83,18 @@ Date: 25/01/2026
 - [MaBoulangerie](https://github.com/Punkyherisson/MaBoulangerie) - Jeu de gestion de Boulangerie
   - Commits: 24 | README: Oui | Licence: MIT License
   - Cree: 2025-01-24 | Mis a jour: 2025-10-24
+- [MammothPython](https://github.com/Punkyherisson/MammothPython) [PRIVE] - Store and view exercices on Mammoth Training
+  - Commits: 17 | README: Oui | Licence: MIT License
+  - Cree: 2025-07-15 | Mis a jour: 2025-12-29
 - [MaTodolist](https://github.com/Punkyherisson/MaTodolist) - Simple DailyTo do list with Log in a textfile 
   - Commits: 6 | README: Oui | Licence: Non
   - Cree: 2024-09-28 | Mis a jour: 2025-08-18
 - [megacorp](https://github.com/Punkyherisson/megacorp) - The starter repo for the Git 2 course on Boot.dev
   - Commits: 11 | README: Oui | Licence: Non
   - Cree: 2025-02-05 | Mis a jour: 2025-02-09
+- [MinnaNoNihongo](https://github.com/Punkyherisson/MinnaNoNihongo) [PRIVE] - Programme de Revision du MinnaNoNihongo
+  - Commits: 76 | README: Oui | Licence: Non
+  - Cree: 2025-04-02 | Mis a jour: 2025-12-26
 - [MultiLanguageMatch](https://github.com/Punkyherisson/MultiLanguageMatch) - Multi Language Match Game
   - Commits: 2 | README: Non | Licence: MIT License
   - Cree: 2025-10-25 | Mis a jour: 2025-10-25
