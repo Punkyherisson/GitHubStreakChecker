@@ -1,5 +1,10 @@
 # GitHub Streak Checker
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![GitHub API](https://img.shields.io/badge/GitHub-API%20v3-181717?logo=github)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 Script Python pour suivre votre streak GitHub et lister tous vos depots.
 
 ## Fonctionnalites
@@ -58,6 +63,54 @@ check_streak_detaille("VotreNomUtilisateur")
 ```bash
 pip install requests
 ```
+
+## Utilisation d'un Personal Access Token (PAT)
+
+### Pourquoi utiliser un PAT ?
+
+| Sans PAT | Avec PAT |
+|----------|----------|
+| 60 requetes/heure | 5000 requetes/heure |
+| Repos publics uniquement | Repos publics + prives |
+| Peut echouer avec beaucoup de repos | Stable et rapide |
+
+### Faut-il en utiliser un ?
+
+- **Non necessaire** si vous avez moins de 30 repos publics et executez le script occasionnellement
+- **Recommande** si vous avez beaucoup de repos ou executez le script frequemment
+- **Obligatoire** si vous voulez voir vos repos prives
+
+### Comment creer un PAT
+
+1. Allez sur [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+2. Cliquez sur "Generate new token (classic)"
+3. Donnez un nom (ex: "Streak Checker")
+4. Selectionnez les permissions : `repo` (pour les repos prives) ou `public_repo` (repos publics uniquement)
+5. Copiez le token genere
+
+### Comment l'utiliser
+
+Ajoutez votre token dans le code en modifiant les headers :
+
+```python
+headers = {
+    "Accept": "application/vnd.github.v3+json",
+    "Authorization": "token VOTRE_TOKEN_ICI"
+}
+```
+
+Ou utilisez une variable d'environnement (plus securise) :
+
+```python
+import os
+token = os.environ.get("GITHUB_TOKEN")
+headers = {
+    "Accept": "application/vnd.github.v3+json",
+    "Authorization": f"token {token}"
+}
+```
+
+> **Attention** : Ne commitez jamais votre token directement dans le code ! Utilisez des variables d'environnement ou un fichier `.env` ignore par git.
 
 ## Limites
 
