@@ -123,8 +123,8 @@ Date: 25/01/2026
   - Commits: 1 | README: Non | Licence: Non
   - Cree: 2025-08-30 | Mis a jour: 2025-08-30
 - [Punkybot](https://github.com/Punkyherisson/Punkybot) - Discord BOT
-  - Commits: 3 | README: Oui | Licence: Non
-  - Cree: 2025-02-22 | Mis a jour: 2025-02-22
+  - Commits: 4 | README: Oui | Licence: Non
+  - Cree: 2025-02-22 | Mis a jour: 2026-01-25
 - [Punkyherisson](https://github.com/Punkyherisson/Punkyherisson)
   - Commits: 17 | README: Oui | Licence: Non
   - Cree: 2024-02-26 | Mis a jour: 2025-05-05
