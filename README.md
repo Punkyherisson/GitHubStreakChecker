@@ -4,14 +4,18 @@
 ![GitHub API](https://img.shields.io/badge/GitHub-API%20v3-181717?logo=github)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+![Repos](https://img.shields.io/badge/Repos-Public%20%2B%20Priv%C3%A9s-orange)
+![Made with](https://img.shields.io/badge/Made%20with-Replit-667881?logo=replit)
 
-Script Python pour suivre votre streak GitHub et lister tous vos depots.
+Script Python pour suivre votre streak GitHub et lister tous vos depots (publics et prives).
 
 ## Fonctionnalites
 
 - Affiche votre streak actuel (jours consecutifs d'activite)
-- Calcule le nombre de jours depuis votre premiere contribution recente
+- Calcule le nombre de jours depuis votre premiere contribution
+- Supporte les repos publics ET prives (avec token)
 - Genere un fichier Markdown avec la liste de tous vos depots incluant :
+  - Visibilite (public/prive)
   - Nombre de commits
   - Presence d'un README
   - Type de licence
@@ -26,13 +30,20 @@ python3 main.py
 ## Exemple de sortie
 
 ```
+Mode authentifie (repos publics + prives)
+
 STREAK Punkyherisson
-Streak actuel: 18 jours
-Jours depuis le debut: 18 jours (depuis 2025-12-05)
-Dernieres dates: ['2025-12-22', '2025-12-21', ...]
+Streak actuel: 26 jours
+Jours depuis le debut: 397 jours (depuis 2024-12-25)
+Dernieres dates: ['2026-01-24', '2026-01-23', ...]
 Parfait !
 
-Fichier cree: repositories22122025.MD (45 depots)
+Recuperation des details pour 50 depots...
+  [1/50] AbosUtilization (PRIVE)
+  [2/50] Automation (public)
+  ...
+
+Fichier cree: repositories25012026.MD (50 depots)
 ```
 
 ## Fichier genere
@@ -40,7 +51,11 @@ Fichier cree: repositories22122025.MD (45 depots)
 Le script cree un fichier `repositoriesDDMMYYYY.MD` contenant :
 
 ```markdown
-- [NomDuRepo](lien) - Description
+## Liste des depots (50 depots)
+- Publics: 45
+- Prives: 5
+
+- [NomDuRepo](lien) [PRIVE] - Description
   - Commits: X | README: Oui/Non | Licence: MIT/Non
   - Cree: YYYY-MM-DD | Mis a jour: YYYY-MM-DD
 ```
