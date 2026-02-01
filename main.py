@@ -113,6 +113,10 @@ def check_streak_detaille(username):
             # Visibilité (public ou privé)
             is_private = repo.get('private', False)
             
+            # Vérifier si le repo vient de Replit
+            homepage = repo.get('homepage', '') or ''
+            is_replit = 'replit' in homepage.lower() or 'repl.co' in homepage.lower()
+            
             all_repos.append({
                 'name': repo['name'],
                 'full_name': repo['full_name'],
@@ -124,7 +128,9 @@ def check_streak_detaille(username):
                 'has_readme': has_readme,
                 'has_license': has_license,
                 'license_name': license_name,
-                'is_private': is_private
+                'is_private': is_private,
+                'is_replit': is_replit,
+                'homepage': homepage
             })
             
             visibility = "PRIVE" if is_private else "public"
@@ -137,13 +143,15 @@ def check_streak_detaille(username):
     # Compter les repos publics et privés
     public_count = sum(1 for r in all_repos if not r['is_private'])
     private_count = sum(1 for r in all_repos if r['is_private'])
+    replit_count = sum(1 for r in all_repos if r['is_replit'])
     
     with open(filename, 'w') as f:
         f.write(f"# Depots GitHub de {username}\n")
-        f.write(f"Date: {datetime.now().strftime('%d/%m/%Y')}\n\n")
+        f.write(f"Date: {datetime.now().strftime('%d/%m/%Y a %H:%M')}\n\n")
         f.write(f"## Liste des depots ({len(all_repos)} depots)\n")
         f.write(f"- Publics: {public_count}\n")
-        f.write(f"- Prives: {private_count}\n\n")
+        f.write(f"- Prives: {private_count}\n")
+        f.write(f"- Depuis Replit: {replit_count}\n\n")
         
         for repo in sorted(all_repos, key=lambda x: x['name'].lower()):
             visibility = " [PRIVE]" if repo['is_private'] else ""
@@ -155,6 +163,9 @@ def check_streak_detaille(username):
             
             f.write(f"  - Commits: {repo['commits']} | README: {readme_status} | Licence: {license_status}\n")
             f.write(f"  - Cree: {repo['created_at']} | Mis a jour: {repo['updated_at']}\n")
+            
+            if repo['is_replit']:
+                f.write(f"  - Source: Replit ({repo['homepage']})\n")
     
     print(f"\nFichier cree: {filename} ({len(all_repos)} depots)")
 
