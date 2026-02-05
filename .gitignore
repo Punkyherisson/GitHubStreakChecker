@@ -1,3 +1,6 @@
+# Generated repository reports (contain personal data)
+repositories*.MD
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
