@@ -1,5 +1,5 @@
 # Depots GitHub de Punkyherisson
-Date: 01/02/2026 a 15:29
+Date: 04/02/2026 a 06:48
 
 ## Liste des depots (50 depots)
 - Publics: 44
@@ -122,8 +122,8 @@ Date: 01/02/2026 a 15:29
   - Commits: 1 | README: Non | Licence: Non
   - Cree: 2025-08-30 | Mis a jour: 2025-08-30
 - [Punkybot](https://github.com/Punkyherisson/Punkybot) - Discord BOT
-  - Commits: 7 | README: Oui | Licence: Non
-  - Cree: 2025-02-22 | Mis a jour: 2026-01-31
+  - Commits: 8 | README: Oui | Licence: Non
+  - Cree: 2025-02-22 | Mis a jour: 2026-02-03
 - [Punkyherisson](https://github.com/Punkyherisson/Punkyherisson)
   - Commits: 17 | README: Oui | Licence: Non
   - Cree: 2024-02-26 | Mis a jour: 2025-05-05
@@ -150,8 +150,8 @@ Date: 01/02/2026 a 15:29
   - Commits: 5 | README: Oui | Licence: MIT License
   - Cree: 2025-12-10 | Mis a jour: 2025-12-16
 - [VibeFlaskAutoEvaluation](https://github.com/Punkyherisson/VibeFlaskAutoEvaluation) [PRIVE] - Flask Project Health Tracking
-  - Commits: 5 | README: Non | Licence: Non
-  - Cree: 2026-02-01 | Mis a jour: 2026-02-01
+  - Commits: 6 | README: Oui | Licence: MIT License
+  - Cree: 2026-02-01 | Mis a jour: 2026-02-02
   - Source: Replit (https://replit.com/@emmanuelgoitia/VibeFlaskAutoEvaluation)
 - [webflyx](https://github.com/Punkyherisson/webflyx)
   - Commits: 13 | README: Non | Licence: Non
